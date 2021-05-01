@@ -1,29 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head class="header-nav">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/styles/main.css" rel="stylesheet" />
+    <link href="assets/styles/main-responsive.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
-    <main id="main-doc" class="main-doc">
-      <nav id="nav-bar" class="lateral">
-          <div class="transladar"><a class="link-transladar" href="#introduccion">Introducción</a></div>
-          <div class="transladar"><a class="link-transladar" href="#lo_que_ya_deberias_saber">Lo que ya deberías saber</a></div>
-          <div class="transladar"><a class="link-transladar" href="#javascript_y_java">JavaScript y Java</a></div>
-          <div class="transladar"><a class="link-transladar" href="#hola_mundo">Hola Mundo</a></div>
-          <div class="transladar"><a class="link-transladar" href="#variables">Variables</a></div>
-          <div class="transladar"><a class="link-transladar" href="#declaracion_de_variables">Declaración de variables</a></div>
-          <div class="transladar"><a class="link-transladar" href="#alcance_de_la_variable">Alcance de la variable</a></div>
-          <div class="transladar"><a class="link-transladar" href="#variables_globales">Varibales globales</a></div>
-          <div class="transladar"><a class="link-transladar" href="#constantes">Costantes</a></div>
-          <div class="transladar"><a class="link-transladar" href="#tipos_de_datos">Tipos de datos</a></div>
-          <div class="transladar"><a class="link-transladar" href="#declaracion_if_else">Declaración if...else</a></div>
-          <div class="transladar"><a class="link-transladar" href="#declaracion_while">Declaración while</a></div>
-          <div class="transladar"><a class="link-transladar" href="#declaracion_de_funciones">Declaración de funciones</a></div>
-          <div class="transladar"><a class="link-transladar" href="#referencias">Referencias</a></div>
+      <script>
+          let navOculto = true;
+          let responsive = document.getElementById('btn-mostrar')
+          if(!responsive){
+            var navbar = document.getElementById('navbar');
+            navbar.style.visibility = 'true'
+          }
+          function mostrar(){              
+            var navbar = document.getElementById('navbar');
+            if(navOculto){
+                navbar.style.visibility = 'visible';
+                navOculto = false;
+            }else{
+                navbar.style.visibility = 'hidden';
+                navOculto = true;
+            }
+          }
+
+          function ocultar(){
+              if(!responsive){
+                var intro = document.getElementById('navbar');
+                intro.style.visibility = 'hidden';
+            }
+          }
+      </script>
+    <main id="main-doc" class="main-doc">        
+        <button class="btn-mostrar" type="button" onclick="mostrar()">Documentación</button>
+        <nav id="navbar" class="lateral">
+          <header class="header-nav">Documentación de JavaScript</header>
+
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#introduccion" onclick="ocultar()">Introducción</a>
+          </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#lo_que_ya_deberias_saber" onclick="ocultar()">Lo que ya deberías saber</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#javascript_y_java" onclick="ocultar()">JavaScript y Java</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#hola_mundo" onclick="ocultar()">Hola Mundo</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#variables" onclick="ocultar()">Variables
+            </a></div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#declaracion_de_variables" onclick="ocultar()">Declaración de variables</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#alcance_de_la_variable" onclick="ocultar()">Alcance de la variable</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#variables_globales" onclick="ocultar()">Varibales globales</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#constantes" onclick="ocultar()">Costantes</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#tipos_de_datos" onclick="ocultar()">Tipos de datos</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#declaracion_if_else" onclick="ocultar()">Declaración if...else</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#declaracion_while" onclick="ocultar()">Declaración while</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link" href="#declaracion_de_funciones" onclick="ocultar()">Declaración de funciones</a>
+            </div>
+          <div class="transladar" id="desplegable">
+              <a class="nav-link"  href="#referencias" onclick="ocultar()">Referencias</a>
+            </div>
       </nav>
       <div class="sections">
         <section class="main-section" id="introduccion">

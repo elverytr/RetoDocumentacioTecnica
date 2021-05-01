@@ -1,0 +1,37 @@
+@media only screen and (max-width: 700px) {
+    html{
+        font-size: 16px;
+    }
+    body{
+        padding-top: 40px;
+    }
+    .lateral{
+        width: 100%;
+    }
+    .sections{
+        width: 100%;
+        margin: 10px;
+    }
+    .btn-mostrar{
+        visibility: visible;
+        border: 1px solid black;
+        height: 40px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        background-color: #C3922E;
+        text-align: center;
+    }
+    .lateral{
+        visibility: hidden;
+        background-color: rgb(197, 197, 197);
+    }
+    .transladar{
+        height: 5%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    html{
+        font-size: 10px;
+    }
+}

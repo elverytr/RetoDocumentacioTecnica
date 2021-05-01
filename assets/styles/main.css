@@ -7,8 +7,8 @@
     text-align: justify;
     font-weight: 600;
 }
-body{
-    font-size: 14px;    
+html{
+    font-size: 14px;   
     font-family: nunito;
 }
 .transladar{
@@ -22,9 +22,15 @@ body{
     border-radius: 3px;
     font-size: 0.7rem;
 }
-.link-transladar{    
+.nav-link{    
     text-decoration: none;
     color: black;
+}
+.header-nav{
+    text-align: center;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 1000;
 }
 .main-doc{
     height: 100vh;
@@ -42,20 +48,23 @@ body{
 .sections{
     float: left;
     width: 80%;
-    margin: 0 0 0 20%;
+    margin: 0 0 0 20%;    
+    background-color: rgba(240, 240, 240, 0.562);    
+    box-sizing: border-box;
 }
 .main-section{
     width: 100%;    
     margin: 0 0 20px 0;
-    padding: 0 0 10px 0;
-    background-color: rgba(240, 240, 240, 0.562);
+    padding: 0 0 10px 0;    
+    box-sizing: border-box;
 }
 .head-section{
     font-size: 1rem;
     color: black;
     background-color: #C3922E;
     max-width: 100%;
-    text-align: center;
+    text-align: center;    
+    box-sizing: border-box;
 }
 .section-text{
     margin: 10px 10px 0px 10px;
@@ -75,4 +84,7 @@ code{
     border-radius: 3px;
     margin: 10px;
     color: rgb(44, 44, 44);
+}
+.btn-mostrar{
+    visibility: hidden;
 }
