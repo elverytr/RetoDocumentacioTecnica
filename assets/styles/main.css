@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(209, 209, 209);
+    background-color: transparent;
+    text-align: justify;
+    font-weight: 600;
+}
+body{
+    font-size: 14px;    
+    font-family: nunito;
+}
+.transladar{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 90%;
+    border-bottom: 1px solid rgb(156, 156, 156);
+    border-radius: 3px;
+    font-size: 0.7rem;
+}
+.link-transladar{    
+    text-decoration: none;
+    color: black;
+}
+.main-doc{
+    height: 100vh;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0px 10px 0px 10px;
+}
+.lateral{
+    position: fixed;
+    float: left;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.sections{
+    float: left;
+    width: 80%;
+    margin: 0 0 0 20%;
+}
+.main-section{
+    width: 100%;    
+    margin: 0 0 20px 0;
+    padding: 0 0 10px 0;
+    background-color: rgba(240, 240, 240, 0.562);
+}
+.head-section{
+    font-size: 1rem;
+    color: black;
+    background-color: #C3922E;
+    max-width: 100%;
+    text-align: center;
+}
+.section-text{
+    margin: 10px 10px 0px 10px;
+    text-indent: 20px;
+}
+li{
+    margin: 0 0 0 40px;
+}
+code{
+    font-weight: 100;
+    font-size: 0.7rem;
+    width: 100%;
+}
+.code-text{
+    background-color: rgb(196, 196, 196);
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px;
+    color: rgb(44, 44, 44);
+}
