@@ -2,32 +2,28 @@
     html{
         font-size: 16px;
     }
-    body{
-        padding-top: 40px;
-    }
-    .lateral{
-        width: 100%;
-    }
     .sections{
         width: 100%;
         margin: 10px;
     }
     .btn-mostrar{
+        border-radius: 10px;
+        margin-top: 10px;
         visibility: visible;
-        border: 1px solid black;
-        height: 40px;
-        position: absolute;
+        border: 0.5px solid black;
+        height: 20px;
+        position: fixed;
         top: 0px;
-        width: 100%;
+        width: 110px;
         background-color: #C3922E;
         text-align: center;
     }
     .lateral{
-        visibility: hidden;
         background-color: rgb(197, 197, 197);
-    }
-    .transladar{
-        height: 5%;
+        margin-top: 40px;
+        border-radius: 5px;
+        width: 200px;
+        height: 90%;
     }
 }
 @media only screen and (max-width: 500px) {
